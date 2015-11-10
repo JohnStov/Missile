@@ -4,6 +4,7 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:wb="http://schemas.microsoft.com/appx/2013/manifest"
   IgnorableNamespaces="uap mp">
 
   <Identity
@@ -45,5 +46,11 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="humaninterfacedevice">
+      <!--Missile Launcher-->
+      <Device Id="vidpid:2123 1010">
+        <Function Type="usage:0001 0010" />
+      </Device>
+    </DeviceCapability>
   </Capabilities>
 </Package>

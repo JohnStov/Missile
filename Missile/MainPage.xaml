@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button x:Name="Up" Content="Up" HorizontalAlignment="Left" Margin="142,31,0,0" VerticalAlignment="Top" Width="60" Click="Up_Click"/>
+        <Button x:Name="Down" Content="Down" HorizontalAlignment="Left" Margin="142,133,0,0" VerticalAlignment="Top" Width="60" Click="Down_Click"/>
+        <Button x:Name="Fire" Content="Fire" HorizontalAlignment="Left" Margin="142,82,0,0" VerticalAlignment="Top" Width="60" Click="Fire_Click"/>
+        <Button x:Name="Left" Content="Left" HorizontalAlignment="Left" Margin="65,82,0,0" VerticalAlignment="Top" Width="60" Click="Left_Click"/>
+        <Button x:Name="Right" Content="Right" HorizontalAlignment="Left" Margin="222,82,0,0" VerticalAlignment="Top" Width="60" Click="Right_Click"/>
+        <CheckBox x:Name="Led" Content="Led" HorizontalAlignment="Left" Margin="17,134,0,0" VerticalAlignment="Top" Click="Led_Click" IsChecked="True"/>
     </Grid>
 </Page>
