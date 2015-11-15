@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>a086e701-36b8-4fff-8e8c-c4e0b3b45d82</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="com.winhill.missile">
+      <UniqueIdentifier>{6189d162-94b0-4f35-92dc-f3258c9b9a6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="missileservice.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="com.winhill.missile\AllJoynBusObjectManager.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\AllJoynHelpers.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileConsumer.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileProducer.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileServiceEventAdapter.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileServiceEventArgs.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileSignals.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\missileWatcher.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\pch.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+    <ClCompile Include="com.winhill.missile\TypeConversionHelpers.cpp">
+      <Filter>com.winhill.missile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="com.winhill.missile\AllJoynBusObjectManager.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\AllJoynHelpers.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\ImissileService.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileConsumer.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileEventArgs.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileMethodResults.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileProducer.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileServiceEventAdapter.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileServiceEventArgs.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileSignals.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileStructures.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\missileWatcher.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\pch.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+    <ClInclude Include="com.winhill.missile\TypeConversionHelpers.h">
+      <Filter>com.winhill.missile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

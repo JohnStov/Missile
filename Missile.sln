@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Missile", "Missile\Missile.csproj", "{711C77F5-E1A7-41B8-BC41-1C7797031A0F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MissileService", "MissileService\MissileService.vcxproj", "{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,18 @@ Global
 		{711C77F5-E1A7-41B8-BC41-1C7797031A0F}.Release|x86.ActiveCfg = Release|x86
 		{711C77F5-E1A7-41B8-BC41-1C7797031A0F}.Release|x86.Build.0 = Release|x86
 		{711C77F5-E1A7-41B8-BC41-1C7797031A0F}.Release|x86.Deploy.0 = Release|x86
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|ARM.Build.0 = Debug|ARM
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|x64.ActiveCfg = Debug|x64
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|x64.Build.0 = Debug|x64
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Debug|x86.Build.0 = Debug|Win32
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|ARM.ActiveCfg = Release|ARM
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|ARM.Build.0 = Release|ARM
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|x64.ActiveCfg = Release|x64
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|x64.Build.0 = Release|x64
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|x86.ActiveCfg = Release|Win32
+		{17C81C6B-3F91-4866-8C66-9B5EAC426AF3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Windows.Devices.Enumeration;
 using Windows.Devices.HumanInterfaceDevice;
 using Windows.Storage;
+using com.winhill.missile;
 
 namespace Missile
 {
@@ -50,49 +51,50 @@ namespace Missile
         private static readonly byte[] GetStatus = { 0, 1, 0, 0, 0, 0, 0, 0, 0 };
         private static readonly byte[] LedOn = { 0, 3, 1, 0, 0, 0, 0, 0, 0 };
         private static readonly byte[] LedOff = { 0, 3, 0, 0, 0, 0, 0, 0, 0 };
-        private const int delay = 1000;
 
-        public async Task SetLightOnAsync()
+        public async Task<missileLedResult> SetLightAsync(bool switchOn)
         {
-            await SendOutputMessage(LedOn);
+            await SendOutputMessage(switchOn?LedOn:LedOff);
+            return missileLedResult.CreateSuccessResult();
+
         }
 
-        public async Task SetLightOffAsync()
-        {
-            await SendOutputMessage(LedOff);
-        }
-
-        public async Task MoveUpAsync()
+        public async Task<missileMoveResult> MoveUpAsync(int millisecs)
         {
             await SendOutputMessage(Up);
-            await Task.Delay(delay);
+            await Task.Delay(millisecs);
             await SendOutputMessage(Stop);
+            return missileMoveResult.CreateSuccessResult();
         }
 
-        public async Task MoveDownAsync()
+        public async Task<missileMoveResult> MoveDownAsync(int millisecs)
         {
             await SendOutputMessage(DOWN);
-            await Task.Delay(delay);
+            await Task.Delay(millisecs);
             await SendOutputMessage(Stop);
+            return missileMoveResult.CreateSuccessResult();
         }
 
-        public async Task MoveLeftAsync()
+        public async Task<missileMoveResult> MoveLeftAsync(int millisecs)
         {
             await SendOutputMessage(LEFT);
-            await Task.Delay(delay);
+            await Task.Delay(millisecs);
             await SendOutputMessage(Stop);
+            return missileMoveResult.CreateSuccessResult();
         }
 
-        public async Task MoveRightAsync()
+        public async Task<missileMoveResult> MoveRightAsync(int millisecs)
         {
             await SendOutputMessage(RIGHT);
-            await Task.Delay(delay);
+            await Task.Delay(millisecs);
             await SendOutputMessage(Stop);
+            return missileMoveResult.CreateSuccessResult();
         }
 
-        public async Task FireAsync()
+        public async Task<missileFireResult> FireAsync()
         {
             await SendOutputMessage(FIRE);
+            return missileFireResult.CreateSuccessResult();
         }
     }
 }

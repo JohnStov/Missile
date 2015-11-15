@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node name="/com/winhill/missile">
+  <interface name="com.winhill.missile">
+    <method name="led">
+      <arg name="on" type="b" direction="in"/>
+    </method>
+    <method name="move">
+      <arg name="direction" type="s" direction="in"/>
+      <arg name="time" type="i" direction="in"/>
+    </method>
+    <method name="fire"/>
+  </interface>
+</node>
